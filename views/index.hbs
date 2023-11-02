@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+
+<body>
+    <header id="home">
+        <div class="container">
+            {{!-- <!--NAVIGATION- --> --}}
+            <div class="navbar">
+                <div class="nav-logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <nav>
+                    <ul class="ul-list">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="#skills">SKILLS</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="ham-menu"><i class="fa-solid fa-bars"></i></div>
+
+            </div>
+
+    -MAIN LOGO OR -->
+            <div class="row">
+                <div class="mainlogo">
+                    <div class="circle">
+                        <div class="circle_img">
+                            <div class="img">
+                                <img src="img/img1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="h2-secondary-one">HEY! </span> <span class="h2-secondary-two">I'M</span>
+                    <h1>ROHIT KUSWAHA</h1>
+                    <h2>Full Stack Developer</h2>
+                    <div class="button"><button class="btn">Download CV</button></div>
+                    <div class="button"><a href="mailto:rohit@gmail.com"><button class="btn">Hire Me</button></a></div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+
+    {{!-- <!--ABOUT SECTION---> --}}
+
+    <div class="row" id="about">
+        <div class="about-img">
+            <img src="img/img2.jpg" alt="">
+        </div>
+        <div class="about">
+            <h3>
+                About Me
+            </h3>
+            <p class="para">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum perspiciatis quibusdam veritatis? Repellat
+                exercitationem expedita cupiditate modi ipsam, molestiae rem laborum fugiat nesciunt beatae. Aperiam
+                molestiae totam, ab blanditiis reprehenderit dignissimos maxime distinctio. Eveniet illum labore
+                praesentium aliquam tempore dolorum aut, consequuntur est porro quibusdam recusandae, placeat quaerat
+                perferendis ipsum non pariatur sint. Corporis eum excepturi ipsam eveniet quas numquam facilis
+                perferendis cum, est debitis magnam necessitatibus fugiat voluptatum? Sit voluptates praesentium
+                tempora!
+            </p>
+        </div>
+    </div>
+
+
+    {{!-- <!-- SERVICES SECTION---> --}}
+
+    <div class="container" id="services">
+        <h2>My Services</h2>
+        <div class="row">
+            <div class="services">
+                <div class="h3-heading">
+                    <i class="fa-solid fa-pen"></i>
+                    <div class="h3">UI / UX </div>
+                    <div class="h3">Design</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-text">
+                        Create backend of the server using Javascript, Node.Js, Express, Hbs, MongoDb
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="h3-heading">
+                    <i class="fa-solid fa-code"></i>
+                    <div class="h3">Front-End</div>
+                    <div class="h3">Development</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-text">
+                        Create backend of the server using Html, CSS, Javascript, Bootstrap, React
+                    </div>
+                </div>
+            </div>
+            <div class="services">
+                <div class="h3-heading">
+                    <i class="fa-solid fa-computer"></i>
+                    <div class="h3">Back-End </div>
+                    <div class="h3">Development</div>
+                </div>
+                <div class="overlay">
+                    <div class="overlay-text">
+                        Create backend of the server using Javascript, Node.Js, Express, Hbs, MongoDb
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {{!-- <-SKILL SECTION---------> --}}
+    <div class="column " id="skills">
+        <h2>My skills</h2>
+        <div class="skill">
+            <h4>HTML</h4>
+            <div class="html"></div>
+        </div>
+        <div class="skill">
+            <h4>CSS</h4>
+            <div class="css"></div>
+        </div>
+        <div class="skill">
+            <h4>JAVASCRIPT</h4>
+            <div class="node"></div>
+        </div>
+        <div class="skill">
+            <h4>NODE.JS</h4>
+            <div class="js"></div>
+        </div>
+        <div class="skill">
+            <h4>REACT</h4>
+            <div class="react"></div>
+        </div>
+        <div class="skill">
+            <h4>MONGODB</h4>
+            <div class="mongodb"></div>
+        </div>
+
+    </div>
+
+
+    {{!-- <!---CONTACT SECTION --> --}}
+
+    <div class="container" id="contact">
+        <h2>Contact Me</h2>
+        <div class="row">
+            <div class="form-box">
+                <form action="/contact" class="form" method="post" onsubmit="return validateform()">
+                    <span><input type="text" name="name" class="form-items item" placeholder="Name" id="name">
+                        <div id="namerr"> </div>
+                        <input type="text" name="email" class="form-items item" placeholder="Email" id="email">
+                        <div id="emailerr"></div>
+                    </span>
+                    <div><textarea name="message" id="" cols="20" rows="7" class="form-items textarea"
+                            placeholder=" Write Your Message....."></textarea></div>
+                    <input type="submit" name="" class="submit-btn " value="Send Message">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    {{!-- <!-- FOOTER --> --}}
+
+    <footer>
+        <div class="social">
+            <div class="icon-name"><a href="www.git.com" target="_blank"><i class="fa-brands fa-git"> </i></div>
+            <div class="icon-name"><a href="www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="icon-name"><a href="www.github.com" target="_blank"><i class="fa-brands fa-github"></i></div>
+            <div class="icon-name"><a href="www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="icon-name"><a href="www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+        <div class="copyright"><span>@Copyright</span> <a href="">www.rohitkushwaha.com</a><span>.All Rights
+                Reserved</span></div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
